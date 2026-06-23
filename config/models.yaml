@@ -1,0 +1,5 @@
+# Model ids change over time. Verify against docs.claude.com before relying on these.
+triage_model: "claude-haiku-4-5-20251001"   # cheap relevance pass
+summary_model: "claude-sonnet-4-6"          # higher-quality summaries
+max_tokens_triage: 200
+max_tokens_summary: 600

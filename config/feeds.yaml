@@ -1,0 +1,12 @@
+# VERIFY each returns valid XML before trusting. The fetcher checks feedparser's
+# bozo flag and that entries exist, then skips plus logs any feed that fails.
+feeds:
+  - name: "Nature (flagship)"
+    url: "https://www.nature.com/nature.rss"
+    kind: "journal"          # entries include research + News & Views
+  - name: "Nature News"
+    url: "https://www.nature.com/subjects/news.rss"   # VERIFY exact path
+    kind: "news"
+  - name: "Science News"
+    url: "https://www.science.org/rss/news_current.xml" # VERIFY exact path
+    kind: "news"

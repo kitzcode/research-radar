@@ -1,0 +1,5 @@
+contact_email: "kitz.alexandra@gmail.com"   # used in User-Agent and OpenAlex mailto
+since_days_default: 120
+relevance_threshold: true          # keep only model-relevant
+site_title: "Research Radar"
+site_owner: "kitzcode"

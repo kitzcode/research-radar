@@ -1,0 +1,5 @@
+scope: "all_science"   # or "bio_dx"
+topic_sources:
+  all_science: ["openalex", "arxiv", "europepmc"]
+  bio_dx: ["europepmc", "openalex"]   # add pubmed/biorxiv adapters later if wanted
+per_source_count: 8
