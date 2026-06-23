@@ -3,10 +3,12 @@
 feeds:
   - name: "Nature (flagship)"
     url: "https://www.nature.com/nature.rss"
-    kind: "journal"          # entries include research + News & Views
-  - name: "Nature News"
-    url: "https://www.nature.com/subjects/news.rss"   # VERIFY exact path
-    kind: "news"
+    kind: "journal"          # VERIFIED live: 200, ~75 entries. Includes news (d41586) + research.
   - name: "Science News"
-    url: "https://www.science.org/rss/news_current.xml" # VERIFY exact path
-    kind: "news"
+    url: "https://www.science.org/rss/news_current.xml"
+    kind: "news"             # VERIFIED live: 200, ~10 entries.
+  # Nature News: the dedicated path https://www.nature.com/subjects/news.rss returns 404
+  # (verified live on 2026-06-23), and no other Nature news RSS path resolved cleanly.
+  # The flagship nature.rss above already carries Nature news articles (d41586 ids),
+  # so a separate news feed is not needed. Re-add here only with a URL confirmed to
+  # return valid XML with entries.

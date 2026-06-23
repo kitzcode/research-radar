@@ -11,3 +11,4 @@ data/drafts/*.json
 data/archive/*.md
 !data/drafts/.gitkeep
 !data/archive/.gitkeep
+.claude/

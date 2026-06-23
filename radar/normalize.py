@@ -22,6 +22,7 @@ class Paper:
     source_url: str                  # canonical link, set or rebuilt in citations.py
     source_api: str                  # "openalex" | "arxiv" | "europepmc" | ...
     is_preprint: bool = False
+    is_commentary: bool = False      # mode B: the item is the news/commentary, not primary research
     cited_by_count: Optional[int] = None
     raw: dict = field(default_factory=dict)   # provenance: fields used
 

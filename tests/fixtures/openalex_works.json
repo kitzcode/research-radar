@@ -1,0 +1,1917 @@
+{
+ "results": [
+  {
+   "id": "https://openalex.org/W3161425918",
+   "doi": "https://doi.org/10.1038/s41586-021-03534-y",
+   "title": "In vivo CRISPR base editing of PCSK9 durably lowers cholesterol in primates",
+   "display_name": "In vivo CRISPR base editing of PCSK9 durably lowers cholesterol in primates",
+   "publication_date": "2021-05-19",
+   "cited_by_count": 768,
+   "authorships": [
+    {
+     "author_position": "first",
+     "author": {
+      "id": "https://openalex.org/A5040568538",
+      "display_name": "Kiran Musunuru",
+      "orcid": "https://orcid.org/0000-0003-3298-0368"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I25790992",
+       "display_name": "Cardiovascular Institute of the South",
+       "ror": "https://ror.org/02c2gwm94",
+       "country_code": "US",
+       "type": "other",
+       "lineage": [
+        "https://openalex.org/I25790992"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I79576946",
+       "display_name": "University of Pennsylvania",
+       "ror": "https://ror.org/00b30xv10",
+       "country_code": "US",
+       "type": "education",
+       "lineage": [
+        "https://openalex.org/I79576946"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Kiran Musunuru",
+     "raw_affiliation_strings": [
+      "Cardiovascular Institute, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA",
+      "Department of Genetics, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA",
+      "Division of Cardiovascular Medicine, Department of Medicine, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0003-3298-0368",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Cardiovascular Institute, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA",
+       "institution_ids": [
+        "https://openalex.org/I25790992",
+        "https://openalex.org/I79576946"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Department of Genetics, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA",
+       "institution_ids": [
+        "https://openalex.org/I79576946"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Division of Cardiovascular Medicine, Department of Medicine, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA, USA",
+       "institution_ids": [
+        "https://openalex.org/I79576946"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5082313672",
+      "display_name": "Alexandra C. Chadwick",
+      "orcid": "https://orcid.org/0000-0002-4604-9227"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Alexandra C. Chadwick",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5101112359",
+      "display_name": "Taiji Mizoguchi",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Taiji Mizoguchi",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5090382635",
+      "display_name": "Sara P. Garcia",
+      "orcid": "https://orcid.org/0000-0003-3312-6454"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Sara P. Garcia",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0003-3312-6454",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5064919683",
+      "display_name": "Jamie E. DeNizio",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Jamie E. DeNizio",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5056028144",
+      "display_name": "C.W. Reiss",
+      "orcid": "https://orcid.org/0000-0002-6385-1879"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Caroline W. Reiss",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0002-6385-1879",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5100342680",
+      "display_name": "Kui Wang",
+      "orcid": "https://orcid.org/0000-0002-3138-2553"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Kui Wang",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5008640742",
+      "display_name": "Sowmya Iyer",
+      "orcid": "https://orcid.org/0000-0002-8058-7942"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Sowmya Iyer",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5077112082",
+      "display_name": "Chaitali Dutta",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Chaitali Dutta",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5074019877",
+      "display_name": "Victoria Clendaniel",
+      "orcid": "https://orcid.org/0000-0002-2969-4443"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Victoria Clendaniel",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0002-2969-4443",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5073217383",
+      "display_name": "Michael Amaonye",
+      "orcid": "https://orcid.org/0000-0001-6683-2545"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Michael Amaonye",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0001-6683-2545",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5022470901",
+      "display_name": "Aaron Beach",
+      "orcid": "https://orcid.org/0000-0001-9514-2746"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Aaron Beach",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5030334474",
+      "display_name": "Kathleen Berth",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Kathleen Berth",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5101599594",
+      "display_name": "Souvik Biswas",
+      "orcid": "https://orcid.org/0000-0002-5371-4539"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Souvik Biswas",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5052804569",
+      "display_name": "Maurine Braun",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Maurine C. Braun",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5044270850",
+      "display_name": "Huei-Mei Chen",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Huei-Mei Chen",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5110286680",
+      "display_name": "Thomas V. Colace",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Thomas V. Colace",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5058711918",
+      "display_name": "John D. Ganey",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "John D. Ganey",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5000821454",
+      "display_name": "Soumyashree A. Gangopadhyay",
+      "orcid": "https://orcid.org/0000-0002-8764-1788"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Soumyashree A. Gangopadhyay",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5023055259",
+      "display_name": "Ryan Garrity",
+      "orcid": "https://orcid.org/0000-0002-5015-4505"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Ryan Garrity",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0002-5015-4505",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5060967837",
+      "display_name": "Lisa N. Kasiewicz",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Lisa N. Kasiewicz",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5112265139",
+      "display_name": "Jennifer Lavoie",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Jennifer Lavoie",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5038129158",
+      "display_name": "James A. Madsen",
+      "orcid": "https://orcid.org/0009-0009-2512-8944"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "James A. Madsen",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5051694558",
+      "display_name": "Yuri Matsumoto",
+      "orcid": "https://orcid.org/0000-0002-0669-4088"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Yuri Matsumoto",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5037482943",
+      "display_name": "Anne Marie Mazzola",
+      "orcid": "https://orcid.org/0000-0003-3300-0245"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Anne Marie Mazzola",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5078766709",
+      "display_name": "Yusuf S. Nasrullah",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Yusuf S. Nasrullah",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5037555153",
+      "display_name": "Joseph Nneji",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Joseph Nneji",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5027387841",
+      "display_name": "Huilan Ren",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Huilan Ren",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5062260703",
+      "display_name": "Athul Sanjeev",
+      "orcid": "https://orcid.org/0000-0003-4089-5315"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Athul Sanjeev",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0003-4089-5315",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5069169133",
+      "display_name": "Madeleine Shay",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Madeleine Shay",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5047486694",
+      "display_name": "Mary R. Stahley",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Mary R. Stahley",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5055624396",
+      "display_name": "Steven H.Y. Fan",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210149081",
+       "display_name": "Acuitas Therapeutics (Canada)",
+       "ror": "https://ror.org/04eaec870",
+       "country_code": "CA",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210149081"
+       ]
+      }
+     ],
+     "countries": [
+      "CA"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Steven H. Y. Fan",
+     "raw_affiliation_strings": [
+      "Acuitas Therapeutics, Vancouver, British Columbia, Canada"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Acuitas Therapeutics, Vancouver, British Columbia, Canada",
+       "institution_ids": [
+        "https://openalex.org/I4210149081"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5064040222",
+      "display_name": "Ying K. Tam",
+      "orcid": "https://orcid.org/0000-0002-4083-5251"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210149081",
+       "display_name": "Acuitas Therapeutics (Canada)",
+       "ror": "https://ror.org/04eaec870",
+       "country_code": "CA",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210149081"
+       ]
+      }
+     ],
+     "countries": [
+      "CA"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Ying K. Tam",
+     "raw_affiliation_strings": [
+      "Acuitas Therapeutics, Vancouver, British Columbia, Canada"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Acuitas Therapeutics, Vancouver, British Columbia, Canada",
+       "institution_ids": [
+        "https://openalex.org/I4210149081"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5022668909",
+      "display_name": "Nicole M. Gaudelli",
+      "orcid": "https://orcid.org/0000-0001-8608-4855"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210158011",
+       "display_name": "Beam Therapeutics (United States)",
+       "ror": "https://ror.org/05jqhfh02",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210158011"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Nicole M. Gaudelli",
+     "raw_affiliation_strings": [
+      "Beam Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0001-8608-4855",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Beam Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210158011"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5038751078",
+      "display_name": "Giuseppe Ciaramella",
+      "orcid": "https://orcid.org/0000-0003-3339-7211"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210158011",
+       "display_name": "Beam Therapeutics (United States)",
+       "ror": "https://ror.org/05jqhfh02",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210158011"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Giuseppe Ciaramella",
+     "raw_affiliation_strings": [
+      "Beam Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Beam Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210158011"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5074118224",
+      "display_name": "Leslie E. Stolz",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Leslie E. Stolz",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5061127521",
+      "display_name": "Padma Malyala",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Padma Malyala",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5103584499",
+      "display_name": "Christopher J. Cheng",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Christopher J. Cheng",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5091111026",
+      "display_name": "Kallanthottathil G. Rajeev",
+      "orcid": "https://orcid.org/0000-0002-0104-0237"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Kallanthottathil G. Rajeev",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5110241115",
+      "display_name": "Ellen Rohde",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Ellen Rohde",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5058259636",
+      "display_name": "Andrew M. Bellinger",
+      "orcid": "https://orcid.org/0000-0002-3235-2313"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Andrew M. Bellinger",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "last",
+     "author": {
+      "id": "https://openalex.org/A5040642674",
+      "display_name": "Sekar Kathiresan",
+      "orcid": "https://orcid.org/0000-0002-3711-7101"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I4210120586",
+       "display_name": "Verve Therapeutics (United States)",
+       "ror": "https://ror.org/02f7f9m65",
+       "country_code": "US",
+       "type": "company",
+       "lineage": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": true,
+     "raw_author_name": "Sekar Kathiresan",
+     "raw_affiliation_strings": [
+      "Verve Therapeutics, Cambridge, MA, USA. skathiresan@vervetx.com",
+      "Verve Therapeutics, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0002-3711-7101",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA. skathiresan@vervetx.com",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Verve Therapeutics, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I4210120586"
+       ]
+      }
+     ]
+    }
+   ],
+   "primary_location": {
+    "id": "doi:10.1038/s41586-021-03534-y",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1038/s41586-021-03534-y",
+    "pdf_url": null,
+    "source": {
+     "id": "https://openalex.org/S137773608",
+     "display_name": "Nature",
+     "issn_l": "0028-0836",
+     "issn": [
+      "0028-0836",
+      "1476-4687"
+     ],
+     "is_oa": false,
+     "is_in_doaj": false,
+     "is_core": true,
+     "host_organization": "https://openalex.org/P4310319908",
+     "host_organization_name": "Nature Portfolio",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310319908",
+      "https://openalex.org/P4310319965"
+     ],
+     "host_organization_lineage_names": [
+      "Nature Portfolio",
+      "Springer Nature"
+     ],
+     "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Nature",
+    "raw_type": "journal-article"
+   },
+   "abstract_inverted_index": null
+  },
+  {
+   "id": "https://openalex.org/W3035764705",
+   "doi": "https://doi.org/10.1038/s41587-020-0561-9",
+   "title": "Genome editing with CRISPR\u2013Cas nucleases, base editors, transposases and prime editors",
+   "display_name": "Genome editing with CRISPR\u2013Cas nucleases, base editors, transposases and prime editors",
+   "publication_date": "2020-06-22",
+   "cited_by_count": 2282,
+   "authorships": [
+    {
+     "author_position": "first",
+     "author": {
+      "id": "https://openalex.org/A5045186411",
+      "display_name": "Andrew V. Anzalone",
+      "orcid": "https://orcid.org/0000-0003-2531-5589"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I107606265",
+       "display_name": "Broad Institute",
+       "ror": "https://ror.org/05a0ya142",
+       "country_code": "US",
+       "type": "nonprofit",
+       "lineage": [
+        "https://openalex.org/I107606265"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I1344073410",
+       "display_name": "Howard Hughes Medical Institute",
+       "ror": "https://ror.org/006w34k90",
+       "country_code": "US",
+       "type": "facility",
+       "lineage": [
+        "https://openalex.org/I1344073410"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I136199984",
+       "display_name": "Harvard University",
+       "ror": "https://ror.org/03vek6s52",
+       "country_code": "US",
+       "type": "education",
+       "lineage": [
+        "https://openalex.org/I136199984"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Andrew V. Anzalone",
+     "raw_affiliation_strings": [
+      "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA",
+      "Howard Hughes Medical Institute, Harvard University, Cambridge, MA, USA",
+      "Merkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I136199984"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Harvard University, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I136199984"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Merkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I107606265"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "middle",
+     "author": {
+      "id": "https://openalex.org/A5091617467",
+      "display_name": "Luke W. Koblan",
+      "orcid": "https://orcid.org/0000-0003-2814-4412"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I107606265",
+       "display_name": "Broad Institute",
+       "ror": "https://ror.org/05a0ya142",
+       "country_code": "US",
+       "type": "nonprofit",
+       "lineage": [
+        "https://openalex.org/I107606265"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I1344073410",
+       "display_name": "Howard Hughes Medical Institute",
+       "ror": "https://ror.org/006w34k90",
+       "country_code": "US",
+       "type": "facility",
+       "lineage": [
+        "https://openalex.org/I1344073410"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I136199984",
+       "display_name": "Harvard University",
+       "ror": "https://ror.org/03vek6s52",
+       "country_code": "US",
+       "type": "education",
+       "lineage": [
+        "https://openalex.org/I136199984"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "Luke W. Koblan",
+     "raw_affiliation_strings": [
+      "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA",
+      "Howard Hughes Medical Institute, Harvard University, Cambridge, MA, USA",
+      "Merkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USA"
+     ],
+     "raw_orcid": null,
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I136199984"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Harvard University, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I136199984"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Merkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I107606265"
+       ]
+      }
+     ]
+    },
+    {
+     "author_position": "last",
+     "author": {
+      "id": "https://openalex.org/A5065535610",
+      "display_name": "David R. Liu",
+      "orcid": "https://orcid.org/0000-0002-9943-7557"
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I107606265",
+       "display_name": "Broad Institute",
+       "ror": "https://ror.org/05a0ya142",
+       "country_code": "US",
+       "type": "nonprofit",
+       "lineage": [
+        "https://openalex.org/I107606265"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I1344073410",
+       "display_name": "Howard Hughes Medical Institute",
+       "ror": "https://ror.org/006w34k90",
+       "country_code": "US",
+       "type": "facility",
+       "lineage": [
+        "https://openalex.org/I1344073410"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I136199984",
+       "display_name": "Harvard University",
+       "ror": "https://ror.org/03vek6s52",
+       "country_code": "US",
+       "type": "education",
+       "lineage": [
+        "https://openalex.org/I136199984"
+       ]
+      },
+      {
+       "id": "https://openalex.org/I2801851002",
+       "display_name": "Harvard University Press",
+       "ror": "https://ror.org/006v7bf86",
+       "country_code": "US",
+       "type": "other",
+       "lineage": [
+        "https://openalex.org/I136199984",
+        "https://openalex.org/I2801851002"
+       ]
+      }
+     ],
+     "countries": [
+      "US"
+     ],
+     "is_corresponding": false,
+     "raw_author_name": "David R. Liu",
+     "raw_affiliation_strings": [
+      "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA. drliu@fas.harvard.edu",
+      "Howard Hughes Medical Institute, Harvard University, Cambridge, MA, USA. drliu@fas.harvard.edu",
+      "Merkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USA. drliu@fas.harvard.edu",
+      "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA"
+     ],
+     "raw_orcid": "https://orcid.org/0000-0002-9943-7557",
+     "affiliations": [
+      {
+       "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA. drliu@fas.harvard.edu",
+       "institution_ids": [
+        "https://openalex.org/I2801851002"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Harvard University, Cambridge, MA, USA. drliu@fas.harvard.edu",
+       "institution_ids": [
+        "https://openalex.org/I1344073410"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Merkin Institute of Transformative Technologies in Healthcare, Broad Institute of Harvard and MIT, Cambridge, MA, USA. drliu@fas.harvard.edu",
+       "institution_ids": [
+        "https://openalex.org/I107606265"
+       ]
+      },
+      {
+       "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA",
+       "institution_ids": [
+        "https://openalex.org/I136199984"
+       ]
+      }
+     ]
+    }
+   ],
+   "primary_location": {
+    "id": "doi:10.1038/s41587-020-0561-9",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1038/s41587-020-0561-9",
+    "pdf_url": null,
+    "source": {
+     "id": "https://openalex.org/S106963461",
+     "display_name": "Nature Biotechnology",
+     "issn_l": "1087-0156",
+     "issn": [
+      "1087-0156",
+      "1546-1696"
+     ],
+     "is_oa": false,
+     "is_in_doaj": false,
+     "is_core": true,
+     "host_organization": "https://openalex.org/P4310319908",
+     "host_organization_name": "Nature Portfolio",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310319908",
+      "https://openalex.org/P4310319965"
+     ],
+     "host_organization_lineage_names": [
+      "Nature Portfolio",
+      "Springer Nature"
+     ],
+     "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Nature Biotechnology",
+    "raw_type": "journal-article"
+   },
+   "abstract_inverted_index": null
+  }
+ ]
+}

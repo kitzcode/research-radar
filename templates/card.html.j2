@@ -1,0 +1,15 @@
+{# templates/card.html.j2 #}
+<article class="card">
+  <h2><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a></h2>
+  <p class="byline">
+    {{ item.citation }}
+    {% if item.is_preprint %}<span class="tag">preprint</span>{% endif %}
+    {% if item.is_commentary %}<span class="tag tag-commentary">commentary, not primary research</span>{% endif %}
+  </p>
+  {% if item.summary %}
+    <p class="summary">{{ item.summary }}</p>
+  {% else %}
+    <p class="summary" style="color:var(--muted)">Abstract unavailable. Open the link to read more.</p>
+  {% endif %}
+  {% if item.why_notable %}<div class="why"><strong>Why it is getting attention:</strong> {{ item.why_notable }}</div>{% endif %}
+</article>

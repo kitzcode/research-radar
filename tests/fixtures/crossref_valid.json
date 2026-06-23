@@ -1,0 +1,72 @@
+{
+ "message": {
+  "DOI": "10.1186/s13059-026-04077-z",
+  "title": [
+   "BEstimate: a computational tool for the design and interpretation of CRISPR base editing experiments"
+  ],
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>CRISPR base editors enable scalable targeted DNA mutagenesis and are a powerful tool for analysing the function of variants of uncertain significance and disease modelling. Existing guide RNA (gRNA) design tools lack comprehensive functional annotation of target sequences. Here we developed BEstimate, a flexible computational pipeline that systematically specifies base editor gRNA target sites, generates on-target activity and off-target predictions, and provides functional, structural and clinical annotations of installed variants. BEstimate supports custom gRNA design against variant alleles and reversion of disease variants. BEstimate is a freely available, versatile tool for designing gRNA libraries and analysing base editor screens.</jats:p>",
+  "author": [
+   {
+    "given": "Cansu",
+    "family": "Din\u00e7er",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Bo",
+    "family": "Fussing",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Mathew J.",
+    "family": "Garnett",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Matthew A.",
+    "family": "Coelho",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "container-title": [
+   "Genome Biology"
+  ],
+  "published": {
+   "date-parts": [
+    [
+     2026,
+     4,
+     27
+    ]
+   ]
+  },
+  "type": "journal-article"
+ }
+}

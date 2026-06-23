@@ -1,0 +1,37 @@
+{# templates/index.html.j2 #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site_title }}</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>{{ site_title }}</h1>
+      <p class="sub">AI-summarized highlights from recent research, with links out to the source.</p>
+    </header>
+
+    {% for run in runs %}
+      <h2 class="section-head">
+        {% if run.mode == "bigstory" %}Big stories this week{% else %}Topic: {{ run.query }}{% endif %}
+      </h2>
+      <div class="meta-bar">
+        {% if run.mode == "bigstory" %}Big story mode{% else %}Topic mode{% endif %}
+        &middot; generated {{ run.generated_display }}
+        &middot; {{ run['items'] | length }} item{{ "s" if run['items'] | length != 1 else "" }}
+      </div>
+      {% for item in run['items'] %}{% include "card.html.j2" %}{% endfor %}
+    {% endfor %}
+
+    <footer>
+      <p>Summaries are AI-generated from public abstracts. Each card links out to the
+      publisher's page, where the full record and abstract live. No verbatim publisher
+      abstracts are reproduced here.</p>
+      <p>{{ site_owner }}</p>
+    </footer>
+  </div>
+</body>
+</html>

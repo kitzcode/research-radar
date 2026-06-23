@@ -1,0 +1,40 @@
+name: Topic digest
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic to search and summarize"
+        required: true
+        type: string
+      since:
+        description: "ISO date lower bound (YYYY-MM-DD), optional"
+        required: false
+        type: string
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Run topic mode
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SPRINGER_API_KEY: ${{ secrets.SPRINGER_API_KEY }}   # optional
+        run: |
+          if [ -n "${{ inputs.since }}" ]; then
+            python -m radar topic "${{ inputs.topic }}" --since "${{ inputs.since }}"
+          else
+            python -m radar topic "${{ inputs.topic }}"
+          fi
+      - name: Commit results
+        run: |
+          git config user.name "research-radar bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ docs/
+          git commit -m "topic digest: ${{ inputs.topic }} ($(date -u +%F))" || echo "no changes"
+          git push
