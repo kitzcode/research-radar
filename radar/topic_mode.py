@@ -103,3 +103,26 @@ def run(query: str, since: str | None = None, n: int | None = None,
         site.render_site(runs)
 
     return public_run
+
+
+def run_many(topics: list[str], since: str | None = None, n: int | None = None,
+             do_llm: bool = True, render: bool = True) -> list[dict]:
+    """Run a list of topics (the saved watchlist) and render the site once.
+
+    A shared HTTP session is reused across topics. Each topic is written to its
+    own drafts JSON and markdown archive and prepended to the public run history,
+    so the site shows every topic with the most recent run on top.
+    """
+    http = Http()
+    results: list[dict] = []
+    for topic in topics:
+        log.info("watchlist topic: %s", topic)
+        try:
+            run_obj = run(topic, since=since, n=n, do_llm=do_llm, http=http, render=False)
+            results.append(run_obj)
+        except Exception as exc:  # noqa: BLE001  one bad topic never sinks the batch
+            log.warning("topic '%s' failed: %s", topic, exc)
+    if render:
+        from . import site, store
+        site.render_site(store.load_public_runs())
+    return results

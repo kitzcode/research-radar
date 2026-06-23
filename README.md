@@ -41,11 +41,17 @@ cp .env.example .env        # then add your ANTHROPIC_API_KEY
 ## Usage
 
 ```
-# Topic mode (needs ANTHROPIC_API_KEY for triage + summaries)
+# Topic mode, ad-hoc keyword search (needs ANTHROPIC_API_KEY for triage + summaries)
 python -m radar topic "CRISPR base editing" --since 2025-01-01 --n 12
+
+# Saved watchlist (point-of-care / IVD presets in config/topics.yaml)
+python -m radar topics                         # run every saved topic
+python -m radar topics --only "point-of-care"  # run a subset by substring
+python -m radar topics --list                  # show the watchlist, do not run
 
 # Run retrieval and assembly only, no API key needed (data pipeline check)
 python -m radar topic "CRISPR base editing" --no-llm
+python -m radar topics --only "point-of-care" --no-llm
 
 # Big-story mode (weekly cron also runs this)
 python -m radar bigstory [--ignore-seen]
@@ -78,6 +84,8 @@ never fabricated.
 
 - `config/models.yaml`: model ids and token limits. Verify ids at docs.claude.com.
 - `config/sources.yaml`: which sources are active and the per-source result cap.
+- `config/topics.yaml`: the saved keyword watchlist (point-of-care / IVD topics)
+  plus its lookback window and per-source count. Edit freely.
 - `config/feeds.yaml`: big-story feed URLs.
 - `config/settings.yaml`: contact email (used in User-Agent and OpenAlex mailto),
   default lookback window, site title and owner.
@@ -104,7 +112,8 @@ reading.
 
 ## Automation
 
+- `.github/workflows/watchlist.yml`: weekly cron for the saved watchlist, commits results.
 - `.github/workflows/digest.yml`: weekly cron for big-story mode, commits results.
-- `.github/workflows/topic.yml`: manual dispatch with a topic input.
+- `.github/workflows/topic.yml`: manual dispatch with an ad-hoc topic input.
 
 Both read `ANTHROPIC_API_KEY` (and optional `SPRINGER_API_KEY`) from repo secrets.

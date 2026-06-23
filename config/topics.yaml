@@ -1,0 +1,34 @@
+# Saved topic watchlist. Run every topic with:  python -m radar topics
+# Run a subset by substring:                     python -m radar topics --only "point-of-care"
+# List without running:                          python -m radar topics --list
+#
+# Ad-hoc keyword search still works for anything not listed here:
+#   python -m radar topic "whatever you want"
+#
+# Edit this list freely. Each entry runs through the same grounded pipeline
+# (retrieve, triage for relevance, summarize from the real abstract).
+
+defaults:
+  since_days: 180      # lookback window for the watchlist (overrides settings default)
+  per_source_count: 6  # results per source per topic
+
+topics:
+  # Point-of-care infectious disease (your primary focus)
+  - "point-of-care diagnostics infectious disease"
+  - "rapid antigen test respiratory virus"
+  - "molecular point-of-care testing infectious disease"
+  - "CRISPR based diagnostics infectious disease detection"
+  - "sexually transmitted infection point-of-care testing"
+  - "tuberculosis rapid diagnostic test"
+  - "malaria rapid diagnostic test"
+  - "HIV point-of-care viral load"
+
+  # Broader in vitro diagnostics (IVD)
+  - "lateral flow immunoassay diagnostics"
+  - "multiplex PCR respiratory pathogen panel"
+  - "biosensor pathogen detection"
+  - "microfluidic diagnostic device"
+  - "antimicrobial resistance rapid diagnostic"
+  - "sepsis biomarker diagnostic test"
+  - "isothermal amplification LAMP diagnostics"
+  - "wastewater surveillance pathogen detection"

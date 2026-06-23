@@ -36,6 +36,17 @@ def main(argv: list[str] | None = None) -> int:
                          help="skip triage and summaries (no API key needed)")
     p_topic.add_argument("--no-render", action="store_true", help="do not write docs/")
 
+    p_topics = sub.add_parser("topics", help="run the saved watchlist (config/topics.yaml)")
+    p_topics.add_argument("--only", default=None,
+                          help="run only watchlist topics containing this substring")
+    p_topics.add_argument("--since", default=None, help="ISO date lower bound (YYYY-MM-DD)")
+    p_topics.add_argument("--n", type=int, default=None, help="per-source result cap")
+    p_topics.add_argument("--list", action="store_true", dest="list_only",
+                          help="print the watchlist and exit, do not run")
+    p_topics.add_argument("--no-llm", action="store_true",
+                          help="skip triage and summaries (no API key needed)")
+    p_topics.add_argument("--no-render", action="store_true", help="do not write docs/")
+
     p_big = sub.add_parser("bigstory", help="weekly journal news to primary papers")
     p_big.add_argument("--ignore-seen", action="store_true", help="re-process seen items")
     p_big.add_argument("--no-render", action="store_true", help="do not write docs/")
@@ -52,6 +63,34 @@ def main(argv: list[str] | None = None) -> int:
             do_llm=not args.no_llm, render=not args.no_render,
         )
         print(json.dumps(run, indent=2, ensure_ascii=False))
+        return 0
+
+    if args.command == "topics":
+        from . import config, topic_mode
+        topics = config.watchlist_topics()
+        if args.only:
+            needle = args.only.lower()
+            topics = [t for t in topics if needle in t.lower()]
+        if args.list_only:
+            print(f"{len(topics)} watchlist topic(s):")
+            for t in topics:
+                print(f"  - {t}")
+            return 0
+        if not topics:
+            print("no matching watchlist topics (check config/topics.yaml or --only)")
+            return 1
+        defaults = config.watchlist_defaults()
+        since = args.since
+        if since is None and defaults.get("since_days"):
+            from datetime import date, timedelta
+            since = (date.today() - timedelta(days=int(defaults["since_days"]))).isoformat()
+        n = args.n or defaults.get("per_source_count")
+        runs = topic_mode.run_many(
+            topics, since=since, n=n,
+            do_llm=not args.no_llm, render=not args.no_render,
+        )
+        total = sum(r["count"] for r in runs)
+        print(f"ran {len(runs)} topic(s), {total} items total. docs/ updated.")
         return 0
 
     if args.command == "bigstory":

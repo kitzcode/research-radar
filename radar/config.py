@@ -51,6 +51,21 @@ def feeds() -> list[dict]:
     return _load_yaml("feeds.yaml").get("feeds", [])
 
 
+@lru_cache(maxsize=None)
+def _topics_doc() -> dict:
+    return _load_yaml("topics.yaml")
+
+
+def watchlist_topics() -> list[str]:
+    """The saved keyword watchlist (point-of-care / IVD presets)."""
+    return [t for t in _topics_doc().get("topics", []) if t and t.strip()]
+
+
+def watchlist_defaults() -> dict:
+    """Default lookback and per-source count for watchlist runs."""
+    return _topics_doc().get("defaults", {}) or {}
+
+
 def contact_email() -> str:
     """Contact address used in User-Agent and the OpenAlex mailto parameter."""
     return settings().get("contact_email", "anonymous@example.com")

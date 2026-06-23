@@ -1,0 +1,38 @@
+name: Watchlist digest
+on:
+  schedule:
+    - cron: "0 12 * * 1"   # Mondays 12:00 UTC, before the big-story run
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Run only watchlist topics containing this substring (optional)"
+        required: false
+        type: string
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Run watchlist
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SPRINGER_API_KEY: ${{ secrets.SPRINGER_API_KEY }}   # optional
+        run: |
+          if [ -n "${{ inputs.only }}" ]; then
+            python -m radar topics --only "${{ inputs.only }}"
+          else
+            python -m radar topics
+          fi
+      - name: Commit results
+        run: |
+          git config user.name "research-radar bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ docs/
+          git commit -m "watchlist digest $(date -u +%F)" || echo "no changes"
+          git push
