@@ -82,6 +82,10 @@ def run(query: str, since: str | None = None, n: int | None = None,
                 keep.append(p)
             else:
                 log.info("triaged out: %s (%s)", p.title[:50], p.relevance_reason)
+        # With the gate off, keep near-matches but float the genuinely relevant
+        # ones to the top so off-topic papers sink to the bottom of the topic.
+        if not require_relevant:
+            keep.sort(key=lambda p: p.relevant is not True)
         papers = keep
         for p in papers:
             summarize.summarize_paper(p)
