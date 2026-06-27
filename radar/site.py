@@ -8,6 +8,7 @@ and an outbound link to the source. Raw publisher abstracts are never rendered.
 """
 from __future__ import annotations
 
+import re
 import shutil
 from datetime import datetime
 from pathlib import Path
@@ -15,6 +16,18 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from radar import config
+
+
+def _slug(text: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
+    return s or "section"
+
+
+def _label(run: dict) -> str:
+    """Short label for a run, used in the contents nav and section heading."""
+    if run.get("mode") == "bigstory":
+        return "Big stories this week"
+    return run.get("query") or "Topic"
 
 _env = Environment(
     loader=FileSystemLoader(str(config.TEMPLATES_DIR)),
@@ -55,8 +68,12 @@ def render_site(runs: list[dict], out_dir: Path | None = None) -> Path:
         key=lambda r: r.get("generated_at") or "",
         reverse=True,
     )
-    for run in ordered:
+    # Stable, unique anchor and contents label per run (index prefix avoids
+    # collisions when the same topic appears across multiple dated runs).
+    for i, run in enumerate(ordered):
         run["generated_display"] = _format_generated(run.get("generated_at"))
+        run["label"] = _label(run)
+        run["anchor"] = f"sec{i + 1}-{_slug(run['label'])}"
 
     site_title = config.settings().get("site_title", "Research Radar")
     site_owner = config.settings().get("site_owner", "Research Radar")

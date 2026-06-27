@@ -9,14 +9,29 @@
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header id="top">
       <h1>{{ site_title }}</h1>
       <p class="sub">AI-summarized highlights from recent research, with links out to the source.</p>
     </header>
 
+    {% if runs %}
+    <nav class="toc" aria-label="Contents">
+      <p class="toc-title">Contents</p>
+      <ul>
+      {% for run in runs %}
+        <li>
+          <a href="#{{ run.anchor }}">{{ run.label }}</a>
+          <span class="toc-meta">{{ run['items'] | length }} item{{ "s" if run['items'] | length != 1 else "" }} &middot; {{ run.generated_display }}</span>
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+
     {% for run in runs %}
-      <h2 class="section-head">
+      <h2 class="section-head" id="{{ run.anchor }}">
         {% if run.mode == "bigstory" %}Big stories this week{% else %}Topic: {{ run.query }}{% endif %}
+        <a class="toc-back" href="#top" title="Back to contents">top</a>
       </h2>
       <div class="meta-bar">
         {% if run.mode == "bigstory" %}Big story mode{% else %}Topic mode{% endif %}
