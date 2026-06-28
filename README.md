@@ -90,6 +90,22 @@ never fabricated.
 - `config/settings.yaml`: contact email (used in User-Agent and OpenAlex mailto),
   default lookback window, site title and owner.
 
+### Making changes (main is protected)
+
+The `main` branch is protected: direct pushes, force-pushes, and deletions are
+blocked for everyone (admins included), so every change lands through a pull
+request. After editing config or code, ship it with:
+
+```
+git switch -c my-change
+# edit files, then:
+git add -A && git commit -m "describe the change"
+git push -u origin my-change
+gh pr create --fill && gh pr merge --merge --delete-branch
+```
+
+The weekly digest workflows already follow this PR flow automatically.
+
 ## Tests
 
 ```
