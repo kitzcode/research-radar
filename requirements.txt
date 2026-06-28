@@ -1,7 +1,8 @@
-requests>=2.31
-feedparser>=6.0
-jinja2>=3.1
-pyyaml>=6.0
-python-dotenv>=1.0
-anthropic>=0.40
-pytest>=8.0
+# Pinned for reproducible, tamper-resistant builds. Bump deliberately.
+requests==2.34.2
+feedparser==6.0.12
+jinja2==3.1.6
+pyyaml==6.0.3
+python-dotenv==1.2.2
+anthropic==0.109.2
+pytest==9.1.0
