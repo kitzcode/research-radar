@@ -23,9 +23,12 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SPRINGER_API_KEY: ${{ secrets.SPRINGER_API_KEY }}   # optional
+          # Input passed via env, never interpolated into the shell, so a crafted
+          # 'only' value cannot inject commands on the runner.
+          ONLY: ${{ inputs.only }}
         run: |
-          if [ -n "${{ inputs.only }}" ]; then
-            python -m radar topics --only "${{ inputs.only }}"
+          if [ -n "$ONLY" ]; then
+            python -m radar topics --only "$ONLY"
           else
             python -m radar topics
           fi

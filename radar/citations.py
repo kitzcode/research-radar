@@ -41,13 +41,30 @@ def extract_doi_candidates(text: str) -> list[str]:
     return uniq
 
 
+def safe_http_url(url: str | None) -> str:
+    """Allow only http(s) URLs through to a rendered href.
+
+    A source_url comes from an external API response, so a compromised or
+    malicious record could carry a javascript: or data: scheme. HTML escaping
+    does not neutralize those, so we gate the scheme here. Anything that is not
+    http(s) is dropped to an empty string and the record loses its link.
+    """
+    if url and url.lower().startswith(("http://", "https://")):
+        return url
+    return ""
+
+
 def canonical_url(p: Paper) -> str:
-    """Preferred outbound link, built from structured fields only."""
+    """Preferred outbound link, built from structured fields only.
+
+    The doi and arxiv branches hardcode a trusted https host. The fallback
+    source_url is the only externally controlled URL, so it is scheme-checked.
+    """
     if p.doi:
         return f"https://doi.org/{p.doi}"
     if p.arxiv_id:
         return f"https://arxiv.org/abs/{p.arxiv_id}"
-    return p.source_url
+    return safe_http_url(p.source_url)
 
 
 def citation_line(p: Paper) -> str:
