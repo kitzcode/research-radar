@@ -68,12 +68,24 @@ def render_site(runs: list[dict], out_dir: Path | None = None) -> Path:
         key=lambda r: r.get("generated_at") or "",
         reverse=True,
     )
-    # Stable, unique anchor and contents label per run (index prefix avoids
-    # collisions when the same topic appears across multiple dated runs).
-    for i, run in enumerate(ordered):
+    # One menu entry per category: keep the most recent run for each label and
+    # drop older repeats, so the sidebar is a clean category list.
+    categories: list[dict] = []
+    seen_labels: set[str] = set()
+    for run in ordered:
+        label = _label(run)
+        if label in seen_labels:
+            continue
+        seen_labels.add(label)
         run["generated_display"] = _format_generated(run.get("generated_at"))
-        run["label"] = _label(run)
+        run["label"] = label
+        categories.append(run)
+
+    # Stable, unique anchor per category (index prefix avoids slug collisions).
+    for i, run in enumerate(categories):
         run["anchor"] = f"sec{i + 1}-{_slug(run['label'])}"
+
+    ordered = categories
 
     site_title = config.settings().get("site_title", "Research Radar")
     site_owner = config.settings().get("site_owner", "Research Radar")
