@@ -8,45 +8,93 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header id="top">
-      <h1>{{ site_title }}</h1>
-      <p class="sub">AI-summarized highlights from recent research, with links out to the source.</p>
-    </header>
-
-    {% if runs %}
-    <nav class="toc" aria-label="Contents">
-      <p class="toc-title">Contents</p>
-      <ul>
-      {% for run in runs %}
-        <li>
-          <a href="#{{ run.anchor }}">{{ run.label }}</a>
-          <span class="toc-meta">{{ run['items'] | length }} item{{ "s" if run['items'] | length != 1 else "" }} &middot; {{ run.generated_display }}</span>
-        </li>
-      {% endfor %}
-      </ul>
-    </nav>
-    {% endif %}
-
-    {% for run in runs %}
-      <h2 class="section-head" id="{{ run.anchor }}">
-        {% if run.mode == "bigstory" %}Big stories this week{% else %}Topic: {{ run.query }}{% endif %}
-        <a class="toc-back" href="#top" title="Back to contents">top</a>
-      </h2>
-      <div class="meta-bar">
-        {% if run.mode == "bigstory" %}Big story mode{% else %}Topic mode{% endif %}
-        &middot; generated {{ run.generated_display }}
-        &middot; {{ run['items'] | length }} item{{ "s" if run['items'] | length != 1 else "" }}
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>{{ site_title }}</h1>
+        <p class="sub">AI-summarized research, with links out to the source.</p>
       </div>
-      {% for item in run['items'] %}{% include "card.html.j2" %}{% endfor %}
-    {% endfor %}
+      <nav class="menu" aria-label="Categories">
+        <p class="menu-title">Categories</p>
+        {% for run in runs %}
+        <a class="menu-item" href="#{{ run.anchor }}" data-target="{{ run.anchor }}">
+          <span class="menu-label">{{ run.label }}</span>
+          <span class="menu-meta">{{ run['items'] | length }} item{{ "s" if run['items'] | length != 1 else "" }} &middot; {{ run.generated_display }}</span>
+        </a>
+        {% endfor %}
+      </nav>
+    </aside>
 
-    <footer>
-      <p>Summaries are AI-generated from public abstracts. Each card links out to the
-      publisher's page, where the full record and abstract live. No verbatim publisher
-      abstracts are reproduced here.</p>
-      <p>{{ site_owner }}</p>
-    </footer>
+    <main class="content">
+      <div class="content-inner">
+        {% if not runs %}
+          <p class="empty">No results yet. Run a topic or the watchlist to populate this page.</p>
+        {% endif %}
+        {% for run in runs %}
+        <section class="panel" id="{{ run.anchor }}" aria-label="{{ run.label }}">
+          <h2 class="section-head">
+            {% if run.mode == "bigstory" %}Big stories this week{% else %}{{ run.query }}{% endif %}
+          </h2>
+          <div class="meta-bar">
+            {% if run.mode == "bigstory" %}Big story mode{% else %}Topic mode{% endif %}
+            &middot; generated {{ run.generated_display }}
+            &middot; {{ run['items'] | length }} item{{ "s" if run['items'] | length != 1 else "" }}
+          </div>
+          {% for item in run['items'] %}{% include "card.html.j2" %}{% endfor %}
+        </section>
+        {% endfor %}
+
+        <footer>
+          <p>Summaries are AI-generated from public abstracts. Each card links out to the
+          publisher's page, where the full record and abstract live. No verbatim publisher
+          abstracts are reproduced here.</p>
+          <p>{{ site_owner }}</p>
+        </footer>
+      </div>
+    </main>
   </div>
+
+  {# No page data is interpolated into this script. It reads only from the DOM,
+     so there is no injection surface. With JS off, all panels remain visible. #}
+  <script>
+  (function () {
+    document.documentElement.classList.add('js');
+    var items = [].slice.call(document.querySelectorAll('.menu-item'));
+    var panels = [].slice.call(document.querySelectorAll('.panel'));
+    if (!panels.length) return;
+
+    function activate(id) {
+      var found = false;
+      panels.forEach(function (p) {
+        var on = p.id === id;
+        p.classList.toggle('active', on);
+        if (on) found = true;
+      });
+      items.forEach(function (a) {
+        a.classList.toggle('current', a.getAttribute('data-target') === id);
+      });
+      return found;
+    }
+
+    function selectFromHash() {
+      var id = (location.hash || '').replace('#', '');
+      if (!id || !document.getElementById(id)) id = panels[0].id;
+      activate(id);
+    }
+
+    items.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var id = a.getAttribute('data-target');
+        if (history.replaceState) history.replaceState(null, '', '#' + id);
+        activate(id);
+        window.scrollTo(0, 0);
+      });
+    });
+
+    window.addEventListener('hashchange', selectFromHash);
+    selectFromHash();
+  })();
+  </script>
 </body>
 </html>
